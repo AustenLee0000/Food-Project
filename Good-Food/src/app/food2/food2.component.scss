@@ -1,0 +1,48 @@
+* {
+    position: absolute;
+}
+
+.food-body{
+    transform: scale(1.5);
+    top: 280px;
+    left: 550px;
+}
+
+.plate{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 0px #331900;
+}
+.plate:hover{
+    transform: scale(1.05);
+}
+.plate-circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px #c0c0c0 solid;
+    top: 5px;
+    left: 5px;
+
+}
+.fish1{
+    height: 200px;
+    width: 120px;
+    background: url("fish.png");
+    background-size: 120%;
+    top:-60px;
+    left:-15px;
+    transform: rotate(45deg)
+}
+.soup{
+    height:100px;
+    width: 80px;
+    background-color:#630;
+    opacity: 0.6;
+    border-radius: 70% 40% 70% 30%;
+    transform: rotate(45deg);
+    left: 10px;
+    
+}

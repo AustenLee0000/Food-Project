@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class='plate plate2'
-                routerLink ='/food2'
+                [routerLink]="(!clickin)? '/empty': '/food2'"
                 (click)='toggle_blur()'>
                     <div class='plate-circle'>
                         <div class='food-on-plate2'>
