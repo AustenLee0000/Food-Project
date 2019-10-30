@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>desk of food</title>
+    </head>
+    <body>
+    <div class='background' [@blur-background]="clickin? 'notblur': 'blur'">
+        <div class='desk-body'>
+        <!-- [@desk-rotation]="rotating? 'initial' : 'final'"
+        (click)='toggle_rotate()'> -->
+        <div class='desk'>
+            
+            <div class='plate-group'>
+                <div class='plate plate1'
+                [routerLink]="(!clickin)? '/empty': '/food1'"
+                (click)='toggle_blur()'>
+                    <div class='plate-circle'>
+                        <div class=food-on-plate1>
+                            <div class='baozi-group-5'> 
+                                <div class='baozi-circle-big'>
+                                        <div class='line1'></div>
+                                        <div class='line2'></div>
+                                        <div class='line3'></div>
+                                        <div class='line4'></div>
+                                        <div class='line5'></div>
+                                        <div class='line6'></div>
+                                        <div class='line7'></div>
+                                        <div class='line8'></div>
+                                </div>
+                                <div class='baozi-circle-small'></div>
+                            </div>
+                            <div class='baozi-group-4'> 
+                                    <div class='baozi-circle-big'>
+                                            <div class='line1'></div>
+                                            <div class='line2'></div>
+                                            <div class='line3'></div>
+                                            <div class='line4'></div>
+                                            <div class='line5'></div>
+                                            <div class='line6'></div>
+                                            <div class='line7'></div>
+                                            <div class='line8'></div>
+                                    </div>
+                                    <div class='baozi-circle-small'></div>
+                            </div>
+                            <div class='baozi-group-3'> 
+                                    <div class='baozi-circle-big'>
+                                            <div class='line1'></div>
+                                            <div class='line2'></div>
+                                            <div class='line3'></div>
+                                            <div class='line4'></div>
+                                            <div class='line5'></div>
+                                            <div class='line6'></div>
+                                            <div class='line7'></div>
+                                            <div class='line8'></div>
+                                    </div>
+                                    <div class='baozi-circle-small'></div>
+                            </div>
+                            <div class='baozi-group-2'> 
+                                    <div class='baozi-circle-big'>
+                                            <div class='line1'></div>
+                                            <div class='line2'></div>
+                                            <div class='line3'></div>
+                                            <div class='line4'></div>
+                                            <div class='line5'></div>
+                                            <div class='line6'></div>
+                                            <div class='line7'></div>
+                                            <div class='line8'></div>
+                                    </div>
+                                    <div class='baozi-circle-small'></div>
+                            </div>
+                            <div class='baozi-group-1'> 
+                                    <div class='baozi-circle-big'>
+                                            <div class='line1'></div>
+                                            <div class='line2'></div>
+                                            <div class='line3'></div>
+                                            <div class='line4'></div>
+                                            <div class='line5'></div>
+                                            <div class='line6'></div>
+                                            <div class='line7'></div>
+                                            <div class='line8'></div>
+                                    </div>
+                                    <div class='baozi-circle-small'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='plate plate2'
+                routerLink ='/food2'
+                (click)='toggle_blur()'>
+                    <div class='plate-circle'>
+                        <div class='food-on-plate2'>
+                            <div class='soup'></div>
+                            <div class='fish1'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='plate plate3'>
+                    <div class='plate-circle'></div>
+                </div>
+                <div class='plate plate4'>
+                    <div class='plate-circle'></div>
+                </div>
+                <div class='plate plate5'>
+                    <div class='plate-circle'></div>
+                </div>
+                <div class='plate plate6'>
+                        <div class='plate-circle'></div>
+                </div>
+                <div class='plate plate7'>
+                        <div class='plate-circle'></div>
+                </div>
+                <div class='plate plate8'>
+                        <div class='plate-circle'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <div>
+
+    <!-- (click)='toggle_blur()'> -->
+     <router-outlet ></router-outlet>
+   </div>
+
+    </body>
+</html>
+
