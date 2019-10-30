@@ -55,6 +55,7 @@ body {
     border-radius: 50%;
     background-color: #ffffff;
     box-shadow: 3px 3px 0px #331900;
+    overflow: hidden;
 }
 .plate:hover{
     transform: scale(1.05);
@@ -203,22 +204,134 @@ body {
     left: 8.5px;
     transform: rotate(135deg);
 }
-.fish1{
-    height: 200px;
-    width: 120px;
+.fish{
+    height: 180px;
+    width: 100px;
     background: url("fish.png");
     background-size: 120%;
-    top:-60px;
-    left:-15px;
+    top:-45px;
+    left:-6px;
     transform: rotate(45deg)
 }
-.soup{
+.soup-fish{
     height:100px;
     width: 80px;
     background-color:#630;
     opacity: 0.6;
     border-radius: 70% 40% 70% 30%;
-    transform: rotate(45deg);
+    transform: rotate(20deg);
     left: 10px;
     
+}
+
+.qingtuan-group1{
+    top: 0;
+    left: 0;
+}
+.qingtuan-group2{
+    top: 19px;
+    left: 19px;
+}
+.qingtuan-group3{
+    top: 19px;
+    left: -19px;
+}
+.qingtuan-group4{
+    top: -19px;
+    left: 19px;
+}
+.qingtuan-group5{
+    top: -19px;
+    left: -19px;
+}
+
+.qingtuan-base{
+    height: 35px;
+    width: 35px;
+    border: 2px solid #030;
+    border-radius: 50%;
+    background-color: #060;
+    top: 31px;
+    left: 31px;
+    box-shadow: inset -3px -3px 1px #0d500d;
+}
+.qingtuan-light{
+    height: 10px;
+    width: 5px;
+    border-radius: 50%;
+    transform: rotate(35deg);
+    background-color: #cf9;
+    top: 5px;
+    left: 5px;
+    filter: blur(1px);
+}
+
+
+.shrimp1{
+    height: 50px;
+    width: 50px;
+    background-image: url('shrimp-group.png');
+    background-size: 108%;
+    top: 25px;
+    left: 25px;
+}
+.shrimp2{
+    height: 50px;
+    width: 50px;
+    background-image: url('shrimp-group.png');
+    background-size: 108%;
+    top: 25px;
+    left: 25px;
+    transform: rotate(170deg);
+}
+.shrimp-group1{
+    top: -20px;
+    left: 20px;
+}
+.shrimp-group2{
+    top: 20px;
+    left: 20px;
+}
+.shrimp-group3{
+    top: 20px;
+    left: -20px;
+}
+.shrimp-group4{
+    top: -20px;
+    left: -20px;
+}
+.shrimp-group5{
+    top: 0px;
+    left: 0px;
+}
+.shrimp-group6{
+    top: 0px;
+    left: -25px;
+}
+.shrimp-group7{
+    top: 25px;
+    left: 0px;
+}
+.shrimp-group8{
+    top: -25px;
+    left: 0px;
+}
+.shrimp-group9{
+    top: 0px;
+    left: 25px;
+}
+.tea{
+    height: 100px;
+    width: 100px;
+    background-image: url('tea.png');
+    background-size: 120%;
+}
+.shrimp-soup{
+    height: 95px;
+    width: 95px;
+    background-color: #994c00;
+    opacity: 0.5;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
 }

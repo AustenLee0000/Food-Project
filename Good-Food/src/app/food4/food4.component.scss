@@ -1,0 +1,71 @@
+* {
+    position: absolute;
+}
+
+.food-body{
+    transform: scale(1.5);
+    top: 280px;
+    left: 550px;
+}
+
+.plate{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 0px #331900;
+    overflow: hidden;
+}
+.plate:hover{
+    transform: scale(1.05);
+}
+.plate-circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px #c0c0c0 solid;
+    top: 5px;
+    left: 5px;
+
+}
+.qingtuan-group1{
+    top: 0;
+    left: 0;
+}
+.qingtuan-group2{
+    top: 19px;
+    left: 19px;
+}
+.qingtuan-group3{
+    top: 19px;
+    left: -19px;
+}
+.qingtuan-group4{
+    top: -19px;
+    left: 19px;
+}
+.qingtuan-group5{
+    top: -19px;
+    left: -19px;
+}
+
+.qingtuan-base{
+    height: 35px;
+    width: 35px;
+    border: 2px solid #030;
+    border-radius: 50%;
+    background-color: #060;
+    top: 31px;
+    left: 31px;
+    box-shadow: inset -3px -3px 1px #0d500d;
+}
+.qingtuan-light{
+    height: 10px;
+    width: 5px;
+    border-radius: 50%;
+    transform: rotate(35deg);
+    background-color: #cf9;
+    top: 5px;
+    left: 5px;
+    filter: blur(1px);
+}

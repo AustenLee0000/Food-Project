@@ -8,6 +8,8 @@ import { DeskFoodComponent } from './desk-food/desk-food.component';
 import { Food1Component } from './food1/food1.component';
 import { Food2Component } from './food2/food2.component';
 import { EmptyComponent } from './empty/empty.component';
+import { Food4Component } from './food4/food4.component';
+import { Food3Component } from './food3/food3.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { EmptyComponent } from './empty/empty.component';
     DeskFoodComponent,
     Food1Component,
     Food2Component,
-    EmptyComponent
+    EmptyComponent,
+    Food4Component,
+    Food3Component
   ],
   imports: [
     BrowserModule,
