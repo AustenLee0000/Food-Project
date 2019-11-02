@@ -171,7 +171,9 @@
                     </div>
                 </div>
 
-                <div class='plate plate5'>
+                <div class='plate plate5'
+                [routerLink]="(!clickin)? '/empty': '/food5'"
+                (click)='toggle_blur()'>
                     <div class='plate-circle'>
                         <div class='food-on-plate5'>
                             <div class='congbaohui-group1'>
@@ -219,7 +221,9 @@
                 </div>
             
 
-                <div class='plate plate6'>
+                <div class='plate plate6'
+                [routerLink]="(!clickin)? '/empty': '/food6'"
+                (click)='toggle_blur()'>
                         <div class='plate-circle'>
                                 <div class='soup-noodle'>
                                         <div class='circle-group9'>
@@ -375,7 +379,9 @@
                     </div>
         
 
-                <div class='plate plate7'>
+                <div class='plate plate7'
+                [routerLink]="(!clickin)? '/empty': '/food7'"
+                (click)='toggle_blur()'>
                         <div class='plate-circle'>
                             <div class='food-on-plate7'>
                                 <div class='guihuaou-group1'>
@@ -436,7 +442,9 @@
                 </div>
 
 
-                <div class='plate plate8'>
+                <div class='plate plate8'
+                [routerLink]="(!clickin)? '/empty': '/food8'"
+                (click)='toggle_blur()'>
                         <div class='plate-circle'>
                                 <div class='soup-dongporou'>
                                         <div class='leaf2'></div>

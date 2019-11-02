@@ -1,0 +1,96 @@
+* {
+    position: absolute;
+}
+
+.food-body{
+    transform: scale(1.5);
+    top: 280px;
+    left: 550px;
+}
+
+.plate{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 0px #331900;
+    overflow: hidden;
+}
+.plate:hover{
+    transform: scale(1.05);
+}
+.plate-circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px #c0c0c0 solid;
+    top: 5px;
+    left: 5px;
+}
+.soup-dongporou{
+    height: 95px;
+    width: 95px;
+    background-color: #803c34;
+    opacity:1;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
+}
+.dongporou{
+    top: -12px;
+    left: -12px;
+    height: 100px;
+    width: 100px;
+    background-image: url('dongporou.png');
+    background-size: 120%
+}
+.leaf1{
+    height: 40px;
+    width: 35px;
+    background-color: #060;
+    border-radius: 50%;
+    transform: rotate(-80deg);
+    left: 5px;
+    top: 10px;
+    // box-shadow: inset -2px -2px 1px darkgreen;
+}
+.leaf2{
+    height: 40px;
+    width: 25px;
+    background-color: #060;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    left: 20px;
+    top: 0px;
+    // box-shadow: inset -2px -2px 1px darkgreen;
+}
+.leaf3{
+    height: 40px;
+    width: 25px;
+    background-color: #060;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    left: 10px;
+    top: 3px;
+    // box-shadow: inset -2px -2px 1px darkgreen;
+}
+.leaf4{
+    height: 40px;
+    width: 25px;
+    background-color: #060;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    left: 60px;
+    top: 50px;
+    // box-shadow: inset -2px -2px 1px darkgreen;
+}
+.leaf5{
+    height: 40px;
+    width: 25px;
+    background-color: #060;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    left: 60px;
+    top: 50px;
+    // box-shadow: inset -2px -2px 1px darkgreen;
+}

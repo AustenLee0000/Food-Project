@@ -13,6 +13,7 @@ import { Food3Component } from './food3/food3.component';
 import { Food5Component } from './food5/food5.component';
 import { Food6Component } from './food6/food6.component';
 import { Food7Component } from './food7/food7.component';
+import { Food8Component } from './food8/food8.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Food7Component } from './food7/food7.component';
     Food3Component,
     Food5Component,
     Food6Component,
-    Food7Component
+    Food7Component,
+    Food8Component
   ],
   imports: [
     BrowserModule,

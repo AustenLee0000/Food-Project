@@ -1,0 +1,122 @@
+* {
+    position: absolute;
+}
+
+.food-body{
+    transform: scale(1.5);
+    top: 280px;
+    left: 550px;
+}
+
+.plate{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 0px #331900;
+    overflow: hidden;
+}
+.plate:hover{
+    transform: scale(1.05);
+}
+.plate-circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px #c0c0c0 solid;
+    top: 5px;
+    left: 5px;
+}
+.lotusroot{
+    height: 30px;
+    width: 40px;
+    background-color:#CF5732 ;
+    top: 9px;
+    left: 18px;
+    border-radius: 50% 45% 12% 10%;
+    // opacity:90%;
+    box-shadow: 1px 1px 2px #a0522d;
+    border: 1px solid #a0522d ;
+}
+
+.rice1{
+    height:8px;
+    width:10px;
+    background-color: #FBDFD0;
+    top:18px;
+    left:5px;
+    border-radius: 30% 40% 40% 50% ;
+    opacity:95%;
+    transform: rotate(10deg);
+
+}
+
+.rice2{
+    height:9px;
+    width:7px;
+    background-color: #FBDFD0;
+    top:6px;
+    left:10px;
+    border-radius: 60% 60% 40% 70%;
+    opacity:95%;
+    transform: rotate(-10deg);
+}
+
+.rice3{
+    height:10px;
+    width:7px;
+    background-color: #FBDFD0;
+    top:5px;
+    left:23px;
+    border-radius: 90% 90% 80% 80%;
+    opacity:90%;
+    transform: rotate(15deg);
+}
+
+.rice4{
+    height:7px;
+    width:10px;
+    background-color: #FBDFD0;
+    top:17px;
+    left:27px;
+    border-radius: 60% 40% 70% 50%;
+    opacity:95%;
+    transform: rotate(-10deg);
+
+}
+.guihuaou-group1{
+    left:-8px;
+    top:7px;
+}
+
+.guihuaou-group2{
+    left:0px;
+    top:14px;
+}
+
+.guihuaou-group3{
+    left:8px;
+    top:21px;
+}
+
+.guihuaou-group4{
+    left:16px;
+    top:28px;
+}
+.guihuaou-group5{
+    left:24px;
+    top:35px;
+}
+
+.guihuaou-group6{
+    left:30px;
+    top:40px;
+}
+
+.flower{
+    background-image:url('flower.png');
+    height: 120px;
+    width: 120px;
+    left:3px;
+    background-size: 80%;
+}
