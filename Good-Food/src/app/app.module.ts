@@ -10,6 +10,8 @@ import { Food2Component } from './food2/food2.component';
 import { EmptyComponent } from './empty/empty.component';
 import { Food4Component } from './food4/food4.component';
 import { Food3Component } from './food3/food3.component';
+import { Food5Component } from './food5/food5.component';
+import { Food6Component } from './food6/food6.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { Food3Component } from './food3/food3.component';
     Food2Component,
     EmptyComponent,
     Food4Component,
-    Food3Component
+    Food3Component,
+    Food5Component,
+    Food6Component
   ],
   imports: [
     BrowserModule,

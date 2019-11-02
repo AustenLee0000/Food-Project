@@ -84,9 +84,6 @@
                     </div>
                 </div>
 
-
-
-
                 <div class='plate plate2'
                 [routerLink]="(!clickin)? '/empty': '/food2'"
                 (click)='toggle_blur()'>
@@ -97,8 +94,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
 
                 <div class='plate plate3'
@@ -175,9 +170,18 @@
                         </div>
                     </div>
                 </div>
-                <div class='plate plate5'>
-                    <div class='plate-circle'></div>
+
+                <div class='plate plate5'
+                    [routerLink]="(!clickin)? '/empty': '/food5'"
+                    (click)='toggle_blur()'>
+                    <div class='plate-circle'>
+                        <div class='food-on-plate5'>
+                            <div class='soup-fish'></div>
+                            <div class='dongporou'></div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class='plate plate6'>
                         <div class='plate-circle'></div>
                 </div>

@@ -25,17 +25,17 @@ body {
     animation: desk-rotate  20s linear infinite;
 }
 
-@keyframes desk-rotate{
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+// @keyframes desk-rotate{
+//     0% {
+//         transform: rotate(0);
+//     }
+//     50% {
+//         transform: rotate(180deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
 .desk{
     position: absolute;
     height: 600px;
@@ -334,4 +334,14 @@ body {
     border-radius: 50%;
     top: 2.5px;
     left: 2.5px;
+}
+
+.dongporou{
+    height: 100px;
+    width: 80px;
+    background: url("meat.png");
+    background-size: 120%;
+    top:-45px;
+    left:-6px;
+    transform: rotate(45deg);
 }
