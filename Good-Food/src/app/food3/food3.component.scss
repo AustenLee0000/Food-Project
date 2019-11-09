@@ -13,11 +13,12 @@
     width: 120px;
     border-radius: 50%;
     background-color: #ffffff;
-    box-shadow: 3px 3px 0px #331900;
+    box-shadow: 3px 3px 0px #3f372f;
     overflow: hidden;
 }
 .plate:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
+    transition-duration: 0.5s;
 }
 .plate-circle{
     height: 100px;
@@ -95,4 +96,42 @@
     border-radius: 50%;
     top: 2.5px;
     left: 2.5px;
+}
+
+
+.uncooked-shrimp{
+    height: 180px;
+    width: 180px;
+    background-image: url('gredient_shrimp.png');
+    background-size: 100%;
+    top: 260px;
+    left: 550px;
+}
+
+.uncooked-tea{
+    height: 180px;
+    width: 180px;
+    background-image: url('gredient_tea.png');
+    background-size: 100%;
+    top: 290px;
+    left: 555px;
+}
+
+.word{
+    height: 20px;
+    width: 80px;
+    border-radius: 15%;
+    background-color: white;
+    border: 5px solid #0080ff;
+    text-align: center;
+    font-family: 'Arial Rounded MT Bold';
+}
+
+.shrimp-word{
+    top: 410px;
+    left: 615px;
+}
+.tea-word{
+    top: 325px;
+    left: 560px;
 }

@@ -1,5 +1,20 @@
 <div class='graph-body'>
-    <div class='food-body'>
+    <div class='redbean-group'
+    [@redbean-appear]="IsOut?'in':'out'">
+        <div class='redbean'></div>
+        <div class='word redbean-word'>red bean</div>
+    </div>
+    <div class='stickyrice-group'
+    [@stickyrice-appear]="IsOut?'in':'out'">
+        <div class='stickyrice'></div>
+        <div class='word stickyrice-word'>sticky rice</div>
+    </div>
+    <div class='wormwood-group'
+    [@wormwood-appear]="IsOut?'in':'out'">
+        <div class='wormwood'></div>
+        <div class='word wormwood-word'>wormwood</div>
+    </div>
+    <div class='food-body' (click)='toggle_sticky_red_worm()'>
         <div class='plate plate4'>
             <div class='plate-circle'>
                 <div class='food-on-plate4'>

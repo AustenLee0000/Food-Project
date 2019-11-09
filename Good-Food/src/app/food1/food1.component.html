@@ -2,15 +2,13 @@
     <!-- <button (click)='toggle_flour()'>change</button> -->
     <div class='flour-group' 
     [@flour-appear]="IsOut? 'in':'out'">
-        <div class='flour'>
-            <div class='word flour-word'>Flour</div>
-        </div>
+        <div class='flour'></div>
+        <div class='word flour-word'>Flour</div>
     </div>
     <div class='pork-group'
     [@pork-appear]="IsOut? 'in': 'out'">
-        <div class='pork'>
-            <div class='word pork-word'>Pork</div>
-        </div>
+        <div class='pork'></div>
+        <div class='word pork-word'>Pork</div>
     </div>
     <div class='food-body' (click)='toggle_flour_pork()'>
         <div class='plate'>

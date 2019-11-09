@@ -1,5 +1,15 @@
 <div class='graph-body'>
-    <div class='food-body'>
+    <div class='fish-group'
+    [@fish-appear]="IsOut?'in':'out'">
+        <div class='uncooked-fish'></div>
+        <div class='word fish-word'>fish</div>
+    </div>
+    <div class='vinegar-group'
+    [@vinegar-appear]="IsOut?'in':'out'">
+        <div class='vinegar'></div>
+        <div class='word vinegar-word'>vinegar</div>
+    </div>
+    <div class='food-body' (click)='toggle_fish_vinegar()'>
         <div class='plate plate2'>
             <div class='plate-circle'>
                 <div class='food-on-plate2'>

@@ -33,7 +33,7 @@ import {
     ]),
 
     trigger('on-click-big', [
-        state('on-click', style({transform: 'scale(1.15)'})),
+        state('on-click', style({transform: 'scale(1.2)'})),
         state('off-click', style({transform: 'scale(1)'})),
         transition('on-click <=> off-click', [
           animate('1s')

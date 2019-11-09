@@ -1,5 +1,19 @@
 <div class='graph-body'>
-    <div class='food-body'>
+
+    <div class='gredient-shrimp'
+    [@shrimp-appear]="IsOut? 'in':'out'">
+        <div class='uncooked-shrimp'></div>
+        <div class='word shrimp-word'>shrimp</div>
+    </div>
+    <div class='gredient-tea'
+    [@tea-appear]="IsOut? 'in':'out'">
+        <div class='uncooked-tea'></div>
+        <div class='word tea-word'>tea</div>
+    </div>
+
+
+    <div class='food-body'
+    (click)='toggle_shrimp_tea()'>
         <div class='plate plate3'>
                     <div class='plate-circle'>
                         <div class='food-on-plate3'>

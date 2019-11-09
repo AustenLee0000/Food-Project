@@ -20,67 +20,47 @@ import {
       state('out', style({
         transform: 'translate(-200px, -100px) '
       })),
-      transition('in => out' ,[
-        animate('0.2s' , keyframes([
-          style({transform: 'translate(0,0)', offset: 0}),
-          style({transform:'translate(-75px, -70px)', offset: 0.5}),
-          style({ transform: 'translate(-200px, -100px)',offset: 1})
-        ]))
+      transition('in => out', [
+        query('div', [
+          style({transform: 'translate(0)'}),
+          stagger('0.25s', [
+            animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(-200px, -100px)'})),
+          ])
+        ])
       ]),
       transition('out => in', [
-        animate('0.2s', keyframes([
-          style({transform: 'translate(-200px, -100px)', offset: 0}),
-          style({transform: 'translate(-75px, -70px)', offset: 0.5}),
-          style({transform: 'translate(0,0)', offset: 1})
-        ]) )
+        query('div', [
+          style({transform: 'translate(0)'}),
+          stagger('-0.25s', [
+            animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(200px , 100px)'})),
+          ])
+        ])
       ])
     ]),
-
-    trigger('flour-appear', [
-      state('in', style({
-        transform: 'translate(0,0)',
-      })),
-      state('out', style({
-        transform: 'translate(-200px, -100px) '
-      })),
-      transition('in => out' ,[
-        animate('0.2s' , keyframes([
-          style({transform: 'translate(0,0)', offset: 0}),
-          style({transform:'translate(-75px, -70px)', offset: 0.6}),
-          style({ transform: 'translate(-200px, -100px)',offset: 1})
-        ]))
-      ]),
-      transition('out => in', [
-        animate('0.2s', keyframes([
-          style({transform: 'translate(-200px, -100px)', offset: 0}),
-          style({transform: 'translate(-75px, -70px)', offset: 0.6}),
-          style({transform: 'translate(0,0)', offset: 1})
-        ]) )
+      trigger('pork-appear', [
+        state('in', style({
+          transform: 'translate(0,0)',
+        })),
+        state('out', style({
+          transform: 'translate(200px, 100px) '
+        })),
+        transition('in => out', [
+          query('div', [
+            style({transform: 'translate(0)'}),
+            stagger('0.25s', [
+              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(200px, 100px)'})),
+            ])
+          ])
+        ]),
+        transition('out => in', [
+          query('div', [
+            style({transform: 'translate(0)'}),
+            stagger('-0.25s', [
+              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(-200px , -100px)'})),
+            ])
+          ])
+        ])
       ])
-    ]),
-
-    trigger('pork-appear', [
-      state('in', style({
-        transform: 'translate(0,0)' ,
-      })),
-      state('out', style({
-        transform: 'translate(200px, 100px)'
-      })),
-      transition('in => out' ,[
-        animate('0.2s' , keyframes([
-          style({transform: 'translate(0,0)', offset: 0}),
-          style({transform:'translate(75px, 70px)', offset: 0.6}),
-          style({ transform: 'translate(200px, 100px)',offset: 1})
-        ]))
-      ]),
-      transition('out => in', [
-        animate('0.2s', keyframes([
-          style({transform: 'translate(200px, 100px)', offset: 0}),
-          style({transform: 'translate(75px, 70px)', offset: 0.6}),
-          style({transform: 'translate(0,0)', offset: 1})
-        ]) )
-      ])
-    ])
   ],
   templateUrl: './food1.component.html',
   styleUrls: ['./food1.component.scss']
