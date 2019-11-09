@@ -14,28 +14,28 @@ import {
 @Component({
   selector: 'app-food1',
   animations:[
-    trigger('flour-appear', [
-      state('in', style({
-        transform: 'translate(0,0)',
-      })),
-      state('out', style({
-        transform: 'translate(-200px, -100px) '
-      })),
-      transition('in => out' ,[
-        animate('0.2s' , keyframes([
-          style({transform: 'translate(0,0)', offset: 0}),
-          style({transform:'translate(-75px, -70px)', offset: 0.5}),
-          style({ transform: 'translate(-200px, -100px)',offset: 1})
-        ]))
-      ]),
-      transition('out => in', [
-        animate('0.2s', keyframes([
-          style({transform: 'translate(-200px, -100px)', offset: 0}),
-          style({transform: 'translate(-75px, -70px)', offset: 0.5}),
-          style({transform: 'translate(0,0)', offset: 1})
-        ]) )
-      ])
-    ]),
+    // trigger('flour-appear', [
+    //   state('in', style({
+    //     transform: 'translate(0,0)',
+    //   })),
+    //   state('out', style({
+    //     transform: 'translate(-200px, -100px) '
+    //   })),
+    //   transition('in => out' ,[
+    //     animate('0.2s' , keyframes([
+    //       style({transform: 'translate(0,0)', offset: 0}),
+    //       style({transform:'translate(-75px, -70px)', offset: 0.5}),
+    //       style({ transform: 'translate(-200px, -100px)',offset: 1})
+    //     ]))
+    //   ]),
+    //   transition('out => in', [
+    //     animate('0.2s', keyframes([
+    //       style({transform: 'translate(-200px, -100px)', offset: 0}),
+    //       style({transform: 'translate(-75px, -70px)', offset: 0.5}),
+    //       style({transform: 'translate(0,0)', offset: 1})
+    //     ]) )
+    //   ])
+    // ]),
     trigger('pork-appear', [
       state('in', style({
         transform: 'translate(0,0)' ,
@@ -56,6 +56,30 @@ import {
           style({transform: 'translate(75px, 70px)', offset: 0.5}),
           style({transform: 'translate(0,0)', offset: 1})
         ]) )
+      ])
+    ]),
+    trigger('flour-appear',[
+      state('in', style({
+            transform: 'translate(0,0)',
+          })),
+          state('out', style({
+            transform: 'translate(-200px, -100px) '
+          })),
+      transition('* => in', [
+        query('div', [
+          style({opacity: 0, transform: 'translate(0)'}),
+          stagger('-1s', [
+            animate('1s'), style({opacity: 1, transform: 'translate(200px,100px)'})
+          ])
+        ])
+      ]),
+      transition('* => out', [
+        query('div', [
+          style({opacity: 1, transform: 'translate(100px,200px)'}),
+          stagger('-1s', [
+            animate('1s'), style({opacity: 0, transform: 'translate(0)'})
+          ])
+        ])
       ])
     ])
   ],

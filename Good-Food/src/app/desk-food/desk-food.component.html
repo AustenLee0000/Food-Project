@@ -3,7 +3,7 @@
         <title>desk of food</title>
     </head>
     <body>
-    <div class='background' [@blur-background]="clickin? 'notblur': 'blur'">
+    <div class='background' [@blur-background]="(plate_number==0)? 'notblur': 'blur'">
         <div class='desk-body'>
         <!-- [@desk-rotation]="rotating? 'initial' : 'final'"
         (click)='toggle_rotate()'> -->
@@ -11,8 +11,9 @@
             
             <div class='plate-group'>
                 <div class='plate plate1'
-                [routerLink]="(!clickin)? '/empty': '/food1'"
-                (click)='toggle_blur()'>
+                [@on-click-big]="(plate_number==1)? 'on-click': off-click"
+                [routerLink]="(!plate_number==0)? '/empty': '/food1'"
+                (click)='toggle_plate1()'>
                     <div class='plate-circle'>
                         <div class=food-on-plate1>
                             <div class='baozi-group-5'> 
@@ -85,8 +86,9 @@
                 </div>
 
                 <div class='plate plate2'
-                [routerLink]="(!clickin)? '/empty': '/food2'"
-                (click)='toggle_blur()'>
+                [@on-click-big]="(plate_number==2)? 'on-click': off-click"
+                [routerLink]="(!plate_number==0)? '/empty': '/food2'"
+                (click)='toggle_plate2()'>
                     <div class='plate-circle'>
                         <div class='food-on-plate2'>
                             <div class='soup-fish'></div>
@@ -97,8 +99,9 @@
 
 
                 <div class='plate plate3'
-                [routerLink]="(!clickin)? '/empty': '/food3'"
-                (click)='toggle_blur()'>
+                [@on-click-big]="(plate_number==3)? 'on-click': off-click"
+                [routerLink]="(!plate_number==0)? '/empty': '/food3'"
+                (click)='toggle_plate3()'>
                     <div class='plate-circle'>
                         <div class='food-on-plate3'>
                             <div class='shrimp-soup'></div>
@@ -138,8 +141,9 @@
 
 
                 <div class='plate plate4'
-                [routerLink]="(!clickin)? '/empty': '/food4'"
-                (click)='toggle_blur()'>
+                [@on-click-big]="(plate_number==4)? 'on-click': off-click"
+                [routerLink]="(!plate_number==0)? '/empty': '/food4'"
+                (click)='toggle_plate4()'>
                     <div class='plate-circle'>
                         <div class='food-on-plate4'>
                             <div class='qingtuan-group5'>
@@ -172,8 +176,9 @@
                 </div>
 
                 <div class='plate plate5'
-                [routerLink]="(!clickin)? '/empty': '/food5'"
-                (click)='toggle_blur()'>
+                [@on-click-big]="(plate_number==5)? 'on-click': off-click"
+                [routerLink]="(!plate_number==0)? '/empty': '/food5'"
+                (click)='toggle_plate5()'>
                     <div class='plate-circle'>
                         <div class='food-on-plate5'>
                             <div class='congbaohui-group1'>
@@ -222,8 +227,9 @@
             
 
                 <div class='plate plate6'
-                [routerLink]="(!clickin)? '/empty': '/food6'"
-                (click)='toggle_blur()'>
+                [@on-click-big]="(plate_number==6)? 'on-click': off-click"
+                [routerLink]="(!plate_number==0)? '/empty': '/food6'"
+                (click)='toggle_plate6()'>
                         <div class='plate-circle'>
                                 <div class='soup-noodle'>
                                         <div class='circle-group9'>
@@ -380,8 +386,9 @@
         
 
                 <div class='plate plate7'
-                [routerLink]="(!clickin)? '/empty': '/food7'"
-                (click)='toggle_blur()'>
+                [@on-click-big]="(plate_number==7)? 'on-click': off-click"
+                [routerLink]="(!plate_number==0)? '/empty': '/food7'"
+                (click)='toggle_plate7()'>
                         <div class='plate-circle'>
                             <div class='food-on-plate7'>
                                 <div class='guihuaou-group1'>
@@ -443,8 +450,9 @@
 
 
                 <div class='plate plate8'
-                [routerLink]="(!clickin)? '/empty': '/food8'"
-                (click)='toggle_blur()'>
+                [@on-click-big]="(plate_number==8)? 'on-click': off-click"
+                [routerLink]="(!plate_number==0)? '/empty': '/food8'"
+                (click)='toggle_plate8()'>
                         <div class='plate-circle'>
                                 <div class='soup-dongporou'>
                                         <div class='leaf2'></div>
@@ -462,7 +470,6 @@
 </div>
    <div>
 
-    <!-- (click)='toggle_blur()'> -->
      <router-outlet ></router-outlet>
    </div>
 
