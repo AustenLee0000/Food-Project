@@ -101,9 +101,11 @@ body {
     background-color: #ffffff;
     box-shadow: 3px 3px 0px #331900;
     overflow: hidden;
+    transition:0.2s;
 }
 .plate:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
+    transition-duration: 0.4s;
 }
 .plate1{
     top: 460px;

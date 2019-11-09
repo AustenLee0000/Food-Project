@@ -10,7 +10,6 @@ import {
   stagger
 } from '@angular/animations';
 
-
 @Component({
   selector: 'app-food1',
   animations:[
@@ -24,14 +23,14 @@ import {
       transition('in => out' ,[
         animate('0.2s' , keyframes([
           style({transform: 'translate(0,0)', offset: 0}),
-          style({transform:'translate(-75px, -70px)', offset: 0.5}),
+          style({transform:'translate(-75px, -70px)', offset: 0.6}),
           style({ transform: 'translate(-200px, -100px)',offset: 1})
         ]))
       ]),
       transition('out => in', [
         animate('0.2s', keyframes([
           style({transform: 'translate(-200px, -100px)', offset: 0}),
-          style({transform: 'translate(-75px, -70px)', offset: 0.5}),
+          style({transform: 'translate(-75px, -70px)', offset: 0.6}),
           style({transform: 'translate(0,0)', offset: 1})
         ]) )
       ])
@@ -46,14 +45,14 @@ import {
       transition('in => out' ,[
         animate('0.2s' , keyframes([
           style({transform: 'translate(0,0)', offset: 0}),
-          style({transform:'translate(75px, 70px)', offset: 0.5}),
+          style({transform:'translate(75px, 70px)', offset: 0.6}),
           style({ transform: 'translate(200px, 100px)',offset: 1})
         ]))
       ]),
       transition('out => in', [
         animate('0.2s', keyframes([
           style({transform: 'translate(200px, 100px)', offset: 0}),
-          style({transform: 'translate(75px, 70px)', offset: 0.5}),
+          style({transform: 'translate(75px, 70px)', offset: 0.6}),
           style({transform: 'translate(0,0)', offset: 1})
         ]) )
       ])
