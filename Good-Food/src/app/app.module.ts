@@ -14,6 +14,7 @@ import { Food5Component } from './food5/food5.component';
 import { Food6Component } from './food6/food6.component';
 import { Food7Component } from './food7/food7.component';
 import { Food8Component } from './food8/food8.component';
+import { StartpageComponent } from './startpage/startpage.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { Food8Component } from './food8/food8.component';
     Food5Component,
     Food6Component,
     Food7Component,
-    Food8Component
+    Food8Component,
+    StartpageComponent
   ],
   imports: [
     BrowserModule,

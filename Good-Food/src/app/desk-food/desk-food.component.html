@@ -7,9 +7,9 @@
         <div class='desk-body'>
         <!-- [@desk-rotation]="rotating? 'initial' : 'final'"
         (click)='toggle_rotate()'> -->
+   
         <div class='desk'>
-            
-            <div class='plate-group'>
+                     <div class='plate-group'>
                 <div class='plate plate1'
                 [@on-click-big]="(plate_number==1)? 'on-click': off-click"
                 [routerLink]="(!plate_number==0)? '/empty': '/food1'"
