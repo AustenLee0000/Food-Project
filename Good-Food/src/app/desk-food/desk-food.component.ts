@@ -12,17 +12,17 @@ import {
 @Component({
   selector: 'app-desk-food',
   animations:[
-    trigger('desk-rotation', [
-      state('initial', style({transform: 'rotate(0)'})),
-      state('fianl', style({transform:'rotate(360deg)'})),
-      transition('initial => final', [
-        animate('15s', keyframes([
-          style({transform: 'rotate(0)', offset: 0 }),
-          style({transform: 'rotate(180deg)', offset: 0.5}),
-          style({transform: 'rotate(360deg)', offset: 1})
-        ]))
-      ]),
-    ]),
+    // trigger('desk-rotation', [
+    //   state('initial', style({transform: 'rotate(0)'})),
+    //   state('fianl', style({transform:'rotate(360deg)'})),
+    //   transition('initial => final', [
+    //     animate('15s', keyframes([
+    //       style({transform: 'rotate(0)', offset: 0 }),
+    //       style({transform: 'rotate(180deg)', offset: 0.5}),
+    //       style({transform: 'rotate(360deg)', offset: 1})
+    //     ]))
+    //   ]),
+    // ]),
 
     trigger('blur-background', [
       state('blur', style({filter: 'blur(6px)'})),
@@ -38,6 +38,14 @@ import {
         transition('on-click <=> off-click', [
           animate('1s')
         ])
+    ]),
+
+    trigger('ChangeOpacity', [
+      state('full-opacity', style({opacity: 1})),
+      state('zero-opacity', style({opacity: 0})),
+      transition('full-opacity <=> zero-opacity', [
+        animate('100ms')
+      ])
     ])
   ],
   templateUrl: './desk-food.component.html',
@@ -109,6 +117,12 @@ export class DeskFoodComponent implements OnInit {
       this.plate_number = 8;
     }
     else this.plate_number = 0;
+  }
+
+  order = 0;
+
+  toggle_order() {
+    this.order = this.order + 1;
   }
 
   

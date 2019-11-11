@@ -469,8 +469,13 @@
     </div>
 </div>
    <div>
+        <router-outlet ></router-outlet>
+    <div class='button'
+    (click)="toggle_order() "
+    [routerLink]="(order==0)?'/front-page':'/empty1'"
+    [@ChangeOpacity]="(order==0)? 'full-opacity':'zero-opacity'"></div>
 
-     <router-outlet ></router-outlet>
+    
    </div>
 
     </body>
