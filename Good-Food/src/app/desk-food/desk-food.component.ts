@@ -119,10 +119,9 @@ export class DeskFoodComponent implements OnInit {
     else this.plate_number = 0;
   }
 
-  order = 0;
-
+  order = true;
   toggle_order() {
-    this.order = this.order + 1;
+    this.order=!this.order;
   }
 
   

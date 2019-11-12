@@ -849,3 +849,16 @@ body {
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
+.background-front-page{
+    background-color: #FFE5CC;
+    height: 1000px;
+    width: 1000px;
+}
+.hangzhou{
+    left: 275px;
+    height: 700px;
+    width: 1300px;
+    background-image: url('hangzhou-scene1.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+}

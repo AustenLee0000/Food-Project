@@ -470,14 +470,15 @@
 </div>
    <div>
         <router-outlet ></router-outlet>
+   </div>
+   <div class='front-page'
+    *ngIf='order'>
+        <div class='background-front-page'></div>
+        <div class='hangzhou'></div>
+    </div>
     <div class='button'
     (click)="toggle_order() "
-    [routerLink]="(order==0)?'/front-page':'/empty1'"
-    [@ChangeOpacity]="(order==0)? 'full-opacity':'zero-opacity'"></div>
-
-    
-   </div>
-
+    *ngIf='order'></div>
     </body>
 </html>
 
