@@ -856,9 +856,19 @@ body {
 }
 .hangzhou{
     left: 275px;
-    height: 700px;
+    height: 1000px;
     width: 1300px;
     background-image: url('hangzhou-scene1.png');
     background-size: 60%;
     background-repeat: no-repeat;
+}
+.circle-front-page{
+    left: 200px;
+    top: -95px;
+    height: 904px;
+    width: 904px;
+    background-image: url('front-page-circle.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: desk-rotate  40s linear infinite;
 }
