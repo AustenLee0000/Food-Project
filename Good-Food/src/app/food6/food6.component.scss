@@ -253,5 +253,69 @@
 }
 
 
+.xuecai{
+    height: 180px;
+    width: 180px;
+    background-image: url('xuecai.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    top: 290px;
+    left: 540px;
+}
 
+.sun{
+    height: 180px;
+    width: 180px;
+    background-image: url('bamboo-shoot.png');
+    background-size: 85%;
+    background-repeat: no-repeat;
+    top: 300px;
+    left: 600px;
+}
 
+.pork{
+    height: 180px;
+    width: 180px;
+    background-image: url('wuhuarou.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    top: 290px;
+    left: 540px;
+}
+.noodle{
+    height: 180px;
+    width: 180px;
+    background-image: url('noodle.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    top: 290px;
+    left: 600px;
+}
+.word{
+    height: 20px;
+    width: 80px;
+    background-color: white;
+    border: 3px solid #F7EACF;
+    border-radius: 20%;
+    text-align: center;
+    font-family: 'Arial Rounded MT Bold';
+}
+.sun-word{
+    top: 420px;
+    left: 610px;
+    width:120px;
+}
+.xuecai-word{
+    top: 430px;
+    left: 580px;
+}
+
+.noodle-word{
+    top: 410px;
+    left: 650px;
+    width:80px;
+}
+.pork-word{
+    top: 300px;
+    left:590px;
+}
