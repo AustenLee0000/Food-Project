@@ -1,0 +1,44 @@
+*{
+    position: absolute;
+}
+.background{
+    background-color: #FFE5CC;
+    height: 1000px;
+    width: 1000px;
+}
+.hangzhou{
+    left: 275px;
+    height: 700px;
+    width: 1300px;
+    background-image: url('hangzhou-scene1.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    
+}
+.playground{
+    height: 2000px;
+    width: 2000px;
+    left: -100px;
+}
+
+// .title{
+//     height: 100px;
+//     width: 400px;
+//     background-image: url('hangzhoumeishi.png');
+//     background-size: 100%;
+//     top: 100px;
+//     left: 350px;
+// }
+.button{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+.button:hover{
+    transform: scale(1.05);
+}

@@ -4,7 +4,8 @@
     </head>
     <body>
     <div class='background' [@blur-background]="(plate_number==0)? 'notblur': 'blur'">
-        <div class='desk-body'>
+        <div class='desk-body'
+        [@RollOut]="order? 'roll-out': 'roll-in'">
         <!-- [@desk-rotation]="rotating? 'initial' : 'final'"
         (click)='toggle_rotate()'> -->
    
@@ -469,10 +470,17 @@
     </div>
 </div>
    <div>
-
-     <router-outlet ></router-outlet>
+        <router-outlet ></router-outlet>
    </div>
-
+   <div class='front-page'
+    [@InOut]="order? 'flyin':'flyout'">
+        <div class='background-front-page'></div>
+        <div class='circle-front-page'></div>
+        <div class='hangzhou'></div>
+        <div class='button'
+    (click)="toggle_order() "></div>
+    </div>
+    
     </body>
 </html>
 

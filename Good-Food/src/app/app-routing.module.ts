@@ -9,8 +9,12 @@ import { Food6Component } from './food6/food6.component';
 import { Food7Component } from './food7/food7.component';
 import { Food8Component } from './food8/food8.component';
 import { EmptyComponent } from './empty/empty.component';
+import { FrontPageComponent } from './front-page/front-page.component';
+import { Empty1Component } from './empty1/empty1.component'
 
 const routes : Routes =[
+    {path: 'empty1', component: Empty1Component},
+    {path: 'front-page', component: FrontPageComponent},
     {path: 'food1', component: Food1Component},
     {path: 'food2', component: Food2Component},
     {path: 'food3', component: Food3Component},
@@ -19,7 +23,8 @@ const routes : Routes =[
     {path: 'food6', component: Food6Component},
     {path: 'food7', component: Food7Component},
     {path: 'food8', component: Food8Component},
-    {path: 'empty', component: EmptyComponent}
+    {path: 'empty', component: EmptyComponent},
+    
 ];
 
 @NgModule({

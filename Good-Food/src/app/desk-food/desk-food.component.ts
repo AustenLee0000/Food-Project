@@ -5,24 +5,25 @@ import {
   style,
   animate,
   transition,
-  keyframes
+  keyframes,
+  group
 } from '@angular/animations';
 
 
 @Component({
   selector: 'app-desk-food',
   animations:[
-    trigger('desk-rotation', [
-      state('initial', style({transform: 'rotate(0)'})),
-      state('fianl', style({transform:'rotate(360deg)'})),
-      transition('initial => final', [
-        animate('15s', keyframes([
-          style({transform: 'rotate(0)', offset: 0 }),
-          style({transform: 'rotate(180deg)', offset: 0.5}),
-          style({transform: 'rotate(360deg)', offset: 1})
-        ]))
-      ]),
-    ]),
+    // trigger('desk-rotation', [
+    //   state('initial', style({transform: 'rotate(0)'})),
+    //   state('fianl', style({transform:'rotate(360deg)'})),
+    //   transition('initial => final', [
+    //     animate('15s', keyframes([
+    //       style({transform: 'rotate(0)', offset: 0 }),
+    //       style({transform: 'rotate(180deg)', offset: 0.5}),
+    //       style({transform: 'rotate(360deg)', offset: 1})
+    //     ]))
+    //   ]),
+    // ]),
 
     trigger('blur-background', [
       state('blur', style({filter: 'blur(6px)'})),
@@ -38,6 +39,39 @@ import {
         transition('on-click <=> off-click', [
           animate('1s')
         ])
+    ]),
+
+    trigger('ChangeOpacity', [
+      state('full-opacity', style({opacity: 1})),
+      state('zero-opacity', style({opacity: 0})),
+      transition('full-opacity <=> zero-opacity', [
+        animate('100ms')
+      ])
+    ]),
+
+    trigger('InOut', [
+      state('flyin', style({transform: 'translate(0)'})),
+      state('flyout', style({transform: 'translateX(1200px)'})),
+      transition('flyin <=> flyout', [
+        animate('5s ease')
+      ])
+    ]),
+
+
+    trigger('RollOut', [
+      state('roll-out', style({transform: 'translateX(-1000px)'})),
+      state('roll-in', style({transform: 'translateX(0px)'})),
+      transition('roll-out => roll-in',[
+        group([
+          animate('3s', keyframes([
+            style({transform: 'translateX(-1000px) rotate(0)',offset: 0}),
+            style({transform: 'translateX(-750px) rotate(90deg) ', offset: 0.25}),
+            style({transform: 'translateX(-500px) rotate(180deg)', offset: 0.5}),
+            style({transform: 'translateX(-250px) rotate(270deg)', offset: 0.75}),
+            style({transform: 'translateX(0px) rotate(360deg) ', offset: 1})
+          ]))
+        ])
+      ])
     ])
   ],
   templateUrl: './desk-food.component.html',
@@ -109,6 +143,11 @@ export class DeskFoodComponent implements OnInit {
       this.plate_number = 8;
     }
     else this.plate_number = 0;
+  }
+
+  order = true;
+  toggle_order() {
+    this.order=!this.order;
   }
 
   
