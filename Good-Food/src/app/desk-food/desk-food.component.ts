@@ -72,7 +72,7 @@ import {
           ]))
         ])
       ])
-    ])
+    ]),
   ],
   templateUrl: './desk-food.component.html',
   styleUrls: ['./desk-food.component.scss']
@@ -149,8 +149,6 @@ export class DeskFoodComponent implements OnInit {
   toggle_order() {
     this.order=!this.order;
   }
-
-  
 
   
   
