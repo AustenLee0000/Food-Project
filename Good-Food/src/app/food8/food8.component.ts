@@ -18,13 +18,13 @@ import {
         transform: 'translate(0,0)',
       })),
       state('out', style({
-        transform: 'translate(-200px, -100px) '
+        transform: 'translate(-200px, -30px) '
       })),
       transition('in => out', [
         query('div', [
           style({transform: 'translate(0)'}),
           stagger('0.25s', [
-            animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(-200px, -100px)'})),
+            animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(-200px, -30px)'})),
           ])
         ])
       ]),
@@ -32,7 +32,7 @@ import {
         query('div', [
           style({transform: 'translate(0)'}),
           stagger('-0.25s', [
-            animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(200px , 100px)'})),
+            animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(200px , 30px)'})),
           ])
         ])
       ])
@@ -60,18 +60,19 @@ import {
             ])
           ])
         ])
-      ]),trigger('story8-appear', [
+      ])
+      ,trigger('story8-appear', [
         state('in', style({
           transform: 'translate(0,0)',
         })),
         state('out', style({
-          transform: 'translate(-200px, -100px) '
+          transform: 'translate(-1000px, 0px) '
         })),
         transition('in => out', [
           query('div', [
             style({transform: 'translate(0)'}),
             stagger('0.25s', [
-              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(-200px, -100px)'})),
+              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(-1000px, 0px)'})),
             ])
           ])
         ]),
@@ -79,7 +80,7 @@ import {
           query('div', [
             style({transform: 'translate(0)'}),
             stagger('-0.25s', [
-              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(200px , 100px)'})),
+              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(1000px , 0px)'})),
             ])
           ])
         ])
