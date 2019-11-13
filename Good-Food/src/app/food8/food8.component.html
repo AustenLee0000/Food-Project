@@ -1,5 +1,16 @@
 <div class='graph-body'>
-    <div class='food-body'>
+  <div class='wuhuarou-group' 
+    [@wuhuarou-appear]="IsOut? 'in':'out'">
+        <div class='wuhuarou'></div>
+        <div class='word wuhuarou-word'>Pork</div>
+    </div>
+    <div class='soy-sauce-group'
+    [@soy-sauce-appear]="IsOut? 'in': 'out'">
+        <div class='soy-sauce'></div>
+        <div class='word soy-sauce-word'>Soy sauce</div>
+    </div>
+
+    <div class='food-body' (click)='toggle_wuhuarou_soysauce()'>
             <div class='plate plate8'>
                     <div class='plate-circle'>
                             <div class='soup-dongporou'>

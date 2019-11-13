@@ -1,5 +1,17 @@
 <div class='graph-body'>
-    <div class='food-body'>
+    <!-- <button (click)='toggle_youtiao()'>change</button> -->
+    <div class='youtiao-group' 
+    [@youtiao-appear]="IsOut? 'in':'out'">
+        <div class='youtiao-tag'></div>
+        <div class='word youtiao-word'>Youtiao</div>
+    </div>
+    <div class='green-onion-group'
+    [@green-onion-appear]="IsOut? 'in': 'out'">
+        <div class='green-onion-tag'></div>
+        <div class='word green-onion-word'>Green Onion</div>
+    </div>
+
+    <div class='food-body' (click)='toggle_youtiao_greenonion()'>
             <div class='plate plate5'>
                     <div class='plate-circle'>
                         <div class='food-on-plate5'>

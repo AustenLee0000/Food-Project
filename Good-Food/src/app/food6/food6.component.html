@@ -1,5 +1,27 @@
 <div class='graph-body'>
-    <div class='food-body'>
+
+  <div class='sun-group' 
+    [@sun-appear]="IsOut? 'in':'out'">
+        <div class='sun'></div>
+        <div class='word sun-word'>Bamboo Shoot</div>
+    </div>
+    <div class='xuecai-group'
+    [@xuecai-appear]="IsOut? 'in': 'out'">
+        <div class='xuecai'></div>
+        <div class='word xuecai-word'>Xuecai</div>
+    </div>
+    <div class='pork-group' 
+    [@pork-appear]="IsOut? 'in':'out'">
+        <div class='pork'></div>
+        <div class='word pork-word'>Pork</div>
+    </div>
+    <div class='noodle-group'
+    [@noodle-appear]="IsOut? 'in': 'out'">
+        <div class='noodle'></div>
+        <div class='word noodle-word'>Noodle</div>
+    </div>
+
+    <div class='food-body' (click)='toggle_ingredient_noodle()'>
             <div class='plate plate6'>
                     <div class='plate-circle'>
                             <div class='soup-noodle'>
