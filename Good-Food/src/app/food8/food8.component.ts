@@ -60,7 +60,30 @@ import {
             ])
           ])
         ])
-      ])
+      ]),trigger('story8-appear', [
+        state('in', style({
+          transform: 'translate(0,0)',
+        })),
+        state('out', style({
+          transform: 'translate(-200px, -100px) '
+        })),
+        transition('in => out', [
+          query('div', [
+            style({transform: 'translate(0)'}),
+            stagger('0.25s', [
+              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(-200px, -100px)'})),
+            ])
+          ])
+        ]),
+        transition('out => in', [
+          query('div', [
+            style({transform: 'translate(0)'}),
+            stagger('-0.25s', [
+              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(200px , 100px)'})),
+            ])
+          ])
+        ])
+      ]),
   ],
   templateUrl: './food8.component.html',
   styleUrls: ['./food8.component.scss']
