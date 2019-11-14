@@ -14,7 +14,6 @@ import { Food5Component } from './food5/food5.component';
 import { Food6Component } from './food6/food6.component';
 import { Food7Component } from './food7/food7.component';
 import { Food8Component } from './food8/food8.component';
-import { StartpageComponent } from './startpage/startpage.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { Empty1Component } from './empty1/empty1.component';
 
@@ -31,7 +30,6 @@ import { Empty1Component } from './empty1/empty1.component';
     Food6Component,
     Food7Component,
     Food8Component,
-    StartpageComponent,
     FrontPageComponent,
     Empty1Component
   ],

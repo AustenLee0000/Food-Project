@@ -121,3 +121,40 @@
     left:3px;
     background-size: 80%;
 }
+
+.gredient-flower{
+    height: 180px;
+    width: 180px;
+    background-image: url('gredient-sweet-osmanthus.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    top: 270px;
+    left: 540px;
+}
+
+.lotus{
+    height: 180px;
+    width: 180px;
+    background-image: url('gredient-lotus-root.png');
+    background-size: 85%;
+    background-repeat: no-repeat;
+    top: 320px;
+    left: 555px;
+}
+.word{
+    height: 40px;
+    width: 80px;
+    background-color: white;
+    border: 3px solid #EEB965;
+    border-radius: 20%;
+    text-align: center;
+    font-family: 'Arial Rounded MT Bold';
+}
+.flower-word{
+    top: 400px;
+    left: 600px;
+}
+.lotus-word{
+    top: 300px;
+    left: 590px;
+}
