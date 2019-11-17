@@ -137,30 +137,63 @@
     width: 100px;
 }
 
-.story{
+.story-header{
     margin: 30px;
-    top:0px;
-    left: 40%;
+    top:60px;
+    left:30px;
     height: 60px;
-    width: 400px;
-    border-radius: 40%;
-    text-align: center;
-    font:  1.2em "Palatino", serif;
+    width:300px;
+    border-radius: 20%;
+    text-align: left;
+    font-family: optima;
     font-size: 50px;
-    background-color: #ffffff;
-    border: 10px solid #3f372f;
-    font-variant: small-caps;
-
+    color:#52252A;
 }
 
 .storylines{
-    top:120px;
-    left: 30px;
+    top:170px;
+    left:60px;
     height: 200px;
     width: 270px;
     border-radius: 20%;
     text-align: left;
-    font:  1.2em "Palatino", serif;
-    font-size: 20px;
-    color:#803c34;
+    // font-family: Gill Sans;
+    font-family: Optima;
+    font-size: 18px;
+    color:#52252A;
+}
+
+.ingredient-header{
+    margin: 30px;
+    top:60px;
+    left: 900px;
+    height: 60px;
+    width: 300px;
+    border-radius: 10%;
+    text-align: center;
+    font-family: Optima;
+    font-size: 50px;
+    color:#52252A;
+}
+
+.ingredients{
+    margin: 30px;
+    top:17px;
+    left: 950px;
+    height: 200px;
+    width: 270px;
+    border-radius: 20%;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+        padding:5px;
+}
+
+li {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid grey;
+    overflow: none;
 }
