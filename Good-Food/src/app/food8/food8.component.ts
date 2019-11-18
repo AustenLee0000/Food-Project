@@ -61,7 +61,7 @@ import {
           ])
         ])
       ])
-      ,trigger('ingredient8-appear', [
+      ,trigger('ingredient-appear', [
         state('in', style({
           transform: 'translate(0,0)',
         })),
@@ -84,7 +84,7 @@ import {
             ])
           ])
         ])
-      ]),trigger('story8-appear', [
+      ]),trigger('story-appear', [
         state('in', style({
           transform: 'translate(0,0)',
         })),

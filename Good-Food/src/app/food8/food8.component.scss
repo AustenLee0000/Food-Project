@@ -178,22 +178,25 @@
 
 .ingredients{
     margin: 30px;
-    top:17px;
+    top:170px;
     left: 950px;
     height: 200px;
-    width: 270px;
+    width: 500px;
+    font-family: Optima;
     border-radius: 20%;
     text-align: left;
+    font-size: 18px;
+    color:#52252A;
 }
+ul
+{list-style-type:circle;
+width:500px;}
 
-ul {
-    list-style: none;
-        padding:5px;
-}
-
-li {
-    display: inline-block;
-    padding: 5px 10px 5px 10px;
-    border: 2px solid grey;
-    overflow: none;
-}
+ul li{ 
+    // float:left;
+    width:500px;
+    height:40px;
+    line-height:40px; 
+    // text-align:left; 
+    // overflow:hidden
+} 
