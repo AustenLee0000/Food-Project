@@ -76,14 +76,14 @@ import {
         transform: 'translate(0,0)',
       })),
       state('out', style({
-        transform: 'translate(0px, 200px) '
+        transform: 'translate(0px, 150px) '
       })),
       transition('in => out', [
         query('div', [
           style({transform: 'translate(0)'}),
           stagger('0.25s', [
             group([
-              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(0px, 200px)'})),
+              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(0px, 150px)'})),
             ]),
           ])
         ])
@@ -93,7 +93,7 @@ import {
           style({transform: 'translate(0)'}),
           stagger('-0.25s', [
             group([
-              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(0px , -200px)'})),
+              animate('0.5s cubic-bezier(0.35, 0, 0.25, 1)', style({transform: 'translate(0px , -150px)'})),
             ]),
           ])
         ])
